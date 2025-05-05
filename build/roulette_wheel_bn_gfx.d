@@ -1,0 +1,1 @@
+roulette_wheel_bn_gfx.o: roulette_wheel_bn_gfx.s
