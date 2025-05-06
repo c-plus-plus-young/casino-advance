@@ -8,18 +8,20 @@
 #include "bn_format.h"
 // Can use random module instead of mod
 // #include "bn_random.h"
+#include "bn_seed_random.h"
 #include "bn_sprite_animate_actions.h"
 #include "common_variable_8x16_sprite_font.h" 
 #include "bn_sprite_items_variable_8x16_font_red.h"
 #include "bn_sprite_actions.h"
 #include "bn_bg_palettes.h"
-// #include "bn_time.h"
+#include "bn_music_items.h"
+#include "bn_time.h"
 #include "bn_log.h"
 #include "bn_string.h"
 
 // My sprites and libraries
-#include "bn_sprite_items_roulette_wheel.h"
-#include "spin_roulette.h"                     // Assembly mod function
+#include "bn_sprite_items_roulette_wheel.h"       // roulette wheel sprite
+// #include "spin_roulette.h"                     // Assembly mod function
 
 int frame_counter = 0; 
 int result = 0;
@@ -95,6 +97,10 @@ int calculateMoneyEarned(int spin_result) {
 
 int main() {
     bn::core::init();
+
+    // music
+
+    // Random seed, should be based on current time
     // template<int MaxSize> string(std::nullptr_t)-> bn::string<MaxSize>
 
     // // Jan 2nd, 2000 12:30:01
@@ -103,7 +109,15 @@ int main() {
     // current_time.set_hour(12);
     // current_time.set_minute(30);
     // current_time.set_second(1);
-    // // bn::random rand_int;
+    // bn::time();
+    bn::music_items::cozy_interdimensionalracecar.play(0.5);
+    // void bn::time::set_hour(0);
+    // void bn::time::set_minute(0);
+    // void bn::time::set_second(0);
+    // if (bn::time::active()) {
+    //     bn::music_items::cozy_interdimensionalracecar.play(0.5);
+    // }
+    bn::seed_random rand_int;
 
     // int seed;
 
@@ -213,8 +227,8 @@ int main() {
             setBetText();
             spin_frame = frame_counter;
             
-            result = spin_roulette(frame_counter, 38);
-            // result = rand_int.get_unbiased_int(0, 38);
+            // result = spin_roulette(frame_counter, 38);
+            result = rand_int.get_unbiased_int(0, 38);
             bn::core::update();
         }
 
