@@ -52,6 +52,11 @@ main.o: /home/caleb/roulette/src/main.cpp \
  /home/caleb/butano/butano/include/bn_string.h \
  /home/caleb/butano/butano/include/bn_format.h \
  /home/caleb/butano/butano/include/bn_string.h \
+ /home/caleb/butano/butano/include/bn_seed_random.h \
+ /home/caleb/butano/butano/include/bn_math.h \
+ /home/caleb/butano/butano/include/bn_sin_lut.h \
+ /home/caleb/butano/butano/include/bn_reciprocal_lut.h \
+ /home/caleb/butano/butano/include/bn_rule_of_three_approximation.h \
  /home/caleb/butano/butano/include/bn_sprite_animate_actions.h \
  /home/caleb/butano/butano/include/bn_sprite_ptr.h \
  /home/caleb/butano/butano/include/bn_sprite_tiles_ptr.h \
@@ -66,11 +71,14 @@ main.o: /home/caleb/roulette/src/main.cpp \
  /home/caleb/butano/butano/include/bn_value_template_actions.h \
  /home/caleb/butano/butano/include/bn_limits.h \
  /home/caleb/butano/butano/include/bn_bg_palettes.h \
+ /home/caleb/roulette/build/bn_music_items.h \
+ /home/caleb/butano/butano/include/bn_music_item.h \
+ /home/caleb/butano/butano/include/bn_time.h \
+ /home/caleb/butano/butano/include/bn_optional_fwd.h \
  /home/caleb/butano/butano/include/bn_log.h \
  /home/caleb/butano/butano/include/bn_config_log.h \
  /home/caleb/butano/butano/include/bn_log_backend.h \
- /home/caleb/roulette/build/bn_sprite_items_roulette_wheel.h \
- /home/caleb/roulette/include/spin_roulette.h
+ /home/caleb/roulette/build/bn_sprite_items_roulette_wheel.h
 /home/caleb/butano/butano/include/bn_core.h:
 /home/caleb/butano/butano/include/bn_span.h:
 /home/caleb/butano/butano/include/bn_array.h:
@@ -124,6 +132,11 @@ main.o: /home/caleb/roulette/src/main.cpp \
 /home/caleb/butano/butano/include/bn_string.h:
 /home/caleb/butano/butano/include/bn_format.h:
 /home/caleb/butano/butano/include/bn_string.h:
+/home/caleb/butano/butano/include/bn_seed_random.h:
+/home/caleb/butano/butano/include/bn_math.h:
+/home/caleb/butano/butano/include/bn_sin_lut.h:
+/home/caleb/butano/butano/include/bn_reciprocal_lut.h:
+/home/caleb/butano/butano/include/bn_rule_of_three_approximation.h:
 /home/caleb/butano/butano/include/bn_sprite_animate_actions.h:
 /home/caleb/butano/butano/include/bn_sprite_ptr.h:
 /home/caleb/butano/butano/include/bn_sprite_tiles_ptr.h:
@@ -138,8 +151,11 @@ main.o: /home/caleb/roulette/src/main.cpp \
 /home/caleb/butano/butano/include/bn_value_template_actions.h:
 /home/caleb/butano/butano/include/bn_limits.h:
 /home/caleb/butano/butano/include/bn_bg_palettes.h:
+/home/caleb/roulette/build/bn_music_items.h:
+/home/caleb/butano/butano/include/bn_music_item.h:
+/home/caleb/butano/butano/include/bn_time.h:
+/home/caleb/butano/butano/include/bn_optional_fwd.h:
 /home/caleb/butano/butano/include/bn_log.h:
 /home/caleb/butano/butano/include/bn_config_log.h:
 /home/caleb/butano/butano/include/bn_log_backend.h:
 /home/caleb/roulette/build/bn_sprite_items_roulette_wheel.h:
-/home/caleb/roulette/include/spin_roulette.h:
