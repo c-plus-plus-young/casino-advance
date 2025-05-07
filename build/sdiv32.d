@@ -1,1 +1,2 @@
-sdiv32.o: /home/caleb/butano/butano/hw/3rd_party/gba-modern/src/sdiv32.s
+sdiv32.o: \
+ /home/caleb/GameDev/butano/butano/hw/3rd_party/gba-modern/src/sdiv32.s

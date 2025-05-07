@@ -1,11 +1,12 @@
-mm_main.o: /home/caleb/butano/butano/hw/3rd_party/maxmod/source/mm_main.s \
- /home/caleb/butano/butano/hw/3rd_party/maxmod/source/../asm_include/mm_gba_setup.inc \
- /home/caleb/butano/butano/hw/3rd_party/maxmod/source/../asm_include/mp_defs.inc \
- /home/caleb/butano/butano/hw/3rd_party/maxmod/source/../asm_include/mp_mas.inc \
- /home/caleb/butano/butano/hw/3rd_party/maxmod/source/../asm_include/mp_mas_structs.inc \
- /home/caleb/butano/butano/hw/3rd_party/maxmod/source/../asm_include/mp_macros.inc
-/home/caleb/butano/butano/hw/3rd_party/maxmod/source/../asm_include/mm_gba_setup.inc:
-/home/caleb/butano/butano/hw/3rd_party/maxmod/source/../asm_include/mp_defs.inc:
-/home/caleb/butano/butano/hw/3rd_party/maxmod/source/../asm_include/mp_mas.inc:
-/home/caleb/butano/butano/hw/3rd_party/maxmod/source/../asm_include/mp_mas_structs.inc:
-/home/caleb/butano/butano/hw/3rd_party/maxmod/source/../asm_include/mp_macros.inc:
+mm_main.o: \
+ /home/caleb/GameDev/butano/butano/hw/3rd_party/maxmod/source/mm_main.s \
+ /home/caleb/GameDev/butano/butano/hw/3rd_party/maxmod/source/../asm_include/mm_gba_setup.inc \
+ /home/caleb/GameDev/butano/butano/hw/3rd_party/maxmod/source/../asm_include/mp_defs.inc \
+ /home/caleb/GameDev/butano/butano/hw/3rd_party/maxmod/source/../asm_include/mp_mas.inc \
+ /home/caleb/GameDev/butano/butano/hw/3rd_party/maxmod/source/../asm_include/mp_mas_structs.inc \
+ /home/caleb/GameDev/butano/butano/hw/3rd_party/maxmod/source/../asm_include/mp_macros.inc
+/home/caleb/GameDev/butano/butano/hw/3rd_party/maxmod/source/../asm_include/mm_gba_setup.inc:
+/home/caleb/GameDev/butano/butano/hw/3rd_party/maxmod/source/../asm_include/mp_defs.inc:
+/home/caleb/GameDev/butano/butano/hw/3rd_party/maxmod/source/../asm_include/mp_mas.inc:
+/home/caleb/GameDev/butano/butano/hw/3rd_party/maxmod/source/../asm_include/mp_mas_structs.inc:
+/home/caleb/GameDev/butano/butano/hw/3rd_party/maxmod/source/../asm_include/mp_macros.inc:

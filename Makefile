@@ -33,7 +33,7 @@
 #---------------------------------------------------------------------------------------------------------------------
 TARGET      	:=  $(notdir $(CURDIR))
 BUILD       	:=  build
-LIBBUTANO   	:=  ../butano/butano
+LIBBUTANO   	:=  ../../GameDev/butano/butano #replace this with the path to your butano library
 PYTHON      	:=  python
 SOURCES     	:=  src
 INCLUDES    	:=  include
@@ -44,7 +44,7 @@ AUDIOBACKEND	:=  maxmod
 AUDIOTOOL		:=  
 DMGAUDIO    	:=  dmg_audio
 DMGAUDIOBACKEND	:=  default
-ROMTITLE    	:=  ROM TITLE
+ROMTITLE    	:=  Casino Advance
 ROMCODE     	:=  SBTP
 USERFLAGS   	:=  
 USERCXXFLAGS	:=  

@@ -1,2 +1,2 @@
 posprintf.o: \
- /home/caleb/butano/butano/hw/3rd_party/posprintf/src/posprintf.s
+ /home/caleb/GameDev/butano/butano/hw/3rd_party/posprintf/src/posprintf.s

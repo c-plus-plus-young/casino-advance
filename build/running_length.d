@@ -1,2 +1,2 @@
 running_length.o: \
- /home/caleb/butano/butano/hw/3rd_party/cult-of-gba-bios/src/running_length.s
+ /home/caleb/GameDev/butano/butano/hw/3rd_party/cult-of-gba-bios/src/running_length.s

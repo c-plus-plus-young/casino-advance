@@ -1,1 +1,1 @@
-lmul.o: /home/caleb/butano/butano/hw/3rd_party/agbabi/src/lmul.s
+lmul.o: /home/caleb/GameDev/butano/butano/hw/3rd_party/agbabi/src/lmul.s

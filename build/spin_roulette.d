@@ -1,1 +1,1 @@
-spin_roulette.o: /home/caleb/roulette/src/spin_roulette.s
+spin_roulette.o: /home/caleb/Github/casino-advance/src/spin_roulette.s

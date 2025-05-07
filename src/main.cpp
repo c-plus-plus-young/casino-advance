@@ -33,6 +33,7 @@ bool bet_is_color = true;
 bn::string<5> bet_color = "Black";
 int bet_number = 17;
 int bet_value = 5;
+int random_seed = 0;
 
 bn::sprite_text_generator text_gen(common::variable_8x16_sprite_font);
 bn::vector<bn::sprite_ptr, 128> text_sprites;
@@ -99,38 +100,34 @@ int main() {
     bn::core::init();
 
     // music
-
-    // Random seed, should be based on current time
-    // template<int MaxSize> string(std::nullptr_t)-> bn::string<MaxSize>
-
-    // // Jan 2nd, 2000 12:30:01
-    // // bn::time custom_time(2000, 1, 2, 12, 30, 1);
-    // bn::time current_time;
-    // current_time.set_hour(12);
-    // current_time.set_minute(30);
-    // current_time.set_second(1);
-    // bn::time();
     bn::music_items::cozy_interdimensionalracecar.play(0.5);
-    // void bn::time::set_hour(0);
-    // void bn::time::set_minute(0);
-    // void bn::time::set_second(0);
-    // if (bn::time::active()) {
-    //     bn::music_items::cozy_interdimensionalracecar.play(0.5);
-    // }
+
+    // Random seed
     bn::seed_random rand_int;
 
-    // int seed;
-
-    // bn::optional<bn::time> ?_time = bn::time::current();
-    // if (current_time) {
-    //     int seed = current_time.second();
-    //     BN_LOG("Seconds: " + bn::to_string<2>(seed));
-    // }
-    // else {
-    //     BN_LOG("RTC not available or time invalid");
-    //     int seed = -1;
-    // }
-    // BN_LOG(bn::to_string<64>(seed));
+    if(bn::time::active()) {
+        if(bn::optional<bn::time> time = bn::time::current()) {
+            // Good to go
+            BN_LOG("Valid RTC");
+            BN_LOG("Current Time:" + bn::to_string<21>(time->hour()) + ":" + 
+                bn::to_string<21>(time->minute()) + ":" + bn::to_string<21>(time->second()));
+        } else {
+            // invalid RTC time, need to fix
+            BN_LOG("Invalid RTC");
+            bn::time new_time(0, 0, 0);
+            bn::optional<bn::time> time_pointer = new_time;
+            bn::time::current() = new_time;
+            BN_LOG("Set to default time. Currently:" + bn::to_string<39>(time_pointer->hour()) + ":" + 
+                bn::to_string<39>(time_pointer->minute()) + ":" + bn::to_string<39>(time_pointer->second()));
+        }
+        // Set random seed based on current time
+        rand_int.set_seed((bn::time::current()->hour() * 360) + (bn::time::current()->minute() * 60) + 
+            (bn::time::current()->second() * 60));
+            BN_LOG("Random seed: " + bn::to_string<22>(random_seed));
+    } else {
+        // error: no RTC
+        BN_LOG("No RTC");
+    }
 
     // Background
     bn::bg_palettes::set_transparent_color(bn::color(0, 16, 4));
