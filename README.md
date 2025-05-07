@@ -6,7 +6,7 @@ Currently only features roulette
 
 
 ### Make Instructions
-Please use the [Butano getting started]"https://gvaliente.github.io/butano/getting_started.html" documentation to install Butano
+Please use the [Butano getting started](https://gvaliente.github.io/butano/getting_started.html) documentation to install Butano
 
 Download this project to your local system.
 
