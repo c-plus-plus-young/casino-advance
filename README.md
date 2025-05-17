@@ -15,7 +15,6 @@ Edit the Makefile to include the path relative to your butano library
 Run "make" within the root of the project folder to compile the program into a .gba file
 
 ... or just [download the file from itch.io](https://c-plus-plus-young.itch.io/casino-advance) (password is "90%-of-gambling-addicts")
->>>>>>> refs/remotes/origin/main
 
 ---
 This project is licensed under the PolyForm Noncommercial License 1.0.0 — see the [LICENSE](./LICENSE) file for details.
